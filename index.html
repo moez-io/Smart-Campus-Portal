@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home | Smart Campus Portal</title>
+<meta name="description" content="One place for courses, schedules, tasks and announcements.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<section class="hero"><div class="wrap">
+  <h1>Your whole semester, <span>in one place.</span></h1>
+  <p>Check courses, plan your week, track assignments and catch every announcement without opening five different sites.</p>
+  <div class="actions"><a class="btn" href="tasks.html">Manage my tasks</a><a class="btn ghost" href="#dashboard">View dashboard</a></div>
+</div></section>
+
+<section><div class="wrap welcome">
+  <div><h2>Welcome back</h2><p>The Smart Campus Student Portal brings academic information together so you can spend less time searching and more time studying.</p></div>
+  <ul><li>Browse and filter every course</li><li>See your weekly class timetable</li><li>Track assignments that survive a page refresh</li></ul>
+</div></section>
+
+<section id="dashboard"><div class="wrap">
+  <div class="sec-head"><h2>Student dashboard</h2><p>Your academic overview for the current semester.</p></div>
+  <div class="grid stats" id="dashboard-stats"></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>Quick access</h2></div>
+  <div class="grid">
+    <a class="card quick" href="courses.html"><span class="ico">📚</span><h3>Courses</h3><p>Search by name or code, filter by semester and status.</p></a>
+    <a class="card quick" href="schedule.html"><span class="ico">🗓️</span><h3>Class schedule</h3><p>Your weekly timetable with rooms and timings.</p></a>
+    <a class="card quick" href="tasks.html"><span class="ico">✅</span><h3>Task manager</h3><p>Add, complete and delete assignments.</p></a>
+    <a class="card quick" href="profile.html"><span class="ico">👤</span><h3>My profile</h3><p>Update your student information.</p></a>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>Announcements</h2><p>Filter by category to find what matters to you.</p></div>
+  <div class="chips" id="announcement-filters"></div>
+  <div class="grid" id="announcement-list"></div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="sec-head"><h2>Upcoming events</h2></div>
+  <div class="grid" id="event-list"></div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

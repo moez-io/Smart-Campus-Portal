@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Courses | Smart Campus Portal</title>
+<meta name="description" content="Search and filter your courses.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Courses</h1><p>Search by course name or code, then narrow by semester or status.</p></div></div>
+<section><div class="wrap">
+  <div class="controls">
+    <input type="search" id="search" placeholder="Search by course name or code" aria-label="Search courses">
+    <select id="semester" aria-label="Filter by semester"><option value="all">All semesters</option></select>
+    <select id="status" aria-label="Filter by status"><option value="all">All statuses</option></select>
+  </div>
+  <p class="muted" id="count" style="margin-bottom:1rem"></p>
+  <div class="grid" id="course-grid"></div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schedule | Smart Campus Portal</title>
+<meta name="description" content="Weekly class timetable.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Weekly class schedule</h1><p>Your classes, rooms and timings for the week.</p></div></div>
+<section><div class="wrap">
+  <div class="chips" id="day-filters"></div>
+  <div class="table-box"><table>
+    <thead><tr><th>Course</th><th>Instructor</th><th>Day</th><th>Start</th><th>End</th><th>Classroom / Lab</th></tr></thead>
+    <tbody id="schedule-body"></tbody>
+  </table></div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/schedule.js"></script>
+</body>
+</html>

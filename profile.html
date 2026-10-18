@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile | Smart Campus Portal</title>
+<meta name="description" content="Student registration and profile form.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Student profile</h1><p>Fill in your details. Every field is checked as you type.</p></div></div>
+<section><div class="wrap" style="max-width:760px">
+  <form class="card" id="profile-form" novalidate>
+    <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+      <div class="field"><label for="fullName">Full name</label><input id="fullName" name="fullName" autocomplete="name"><small class="error"></small></div>
+      <div class="field"><label for="regNo">Registration number</label><input id="regNo" name="regNo" placeholder="2023-BSCS-014"><small class="error"></small></div>
+      <div class="field"><label for="email">University email</label><input id="email" name="email" type="email" autocomplete="email"><small class="error"></small></div>
+      <div class="field"><label for="phone">Phone number</label><input id="phone" name="phone" type="tel" placeholder="0300-1234567"><small class="error"></small></div>
+      <div class="field"><label for="department">Department</label><select id="department" name="department"><option value="">Select department</option><option>Computer Science</option><option>Software Engineering</option><option>Electrical Engineering</option><option>Business Administration</option></select><small class="error"></small></div>
+      <div class="field"><label for="semester">Semester</label><select id="semester" name="semester"><option value="">Select semester</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select><small class="error"></small></div>
+      <div class="field"><label for="password">Password</label><input id="password" name="password" type="password" autocomplete="new-password"><small class="error"></small></div>
+      <div class="field"><label for="confirm">Confirm password</label><input id="confirm" name="confirm" type="password" autocomplete="new-password"><small class="error"></small></div>
+    </div>
+    <button class="btn" type="submit" style="margin-top:1.4rem">Save profile</button>
+  </form>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+</body>
+</html>

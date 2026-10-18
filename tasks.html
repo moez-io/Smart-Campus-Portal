@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tasks | Smart Campus Portal</title>
+<meta name="description" content="Assignment and task manager.">
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="site-header"></header>
+<main>
+<div class="page-head"><div class="wrap"><h1>Task manager</h1><p>Tasks are saved in your browser, so they will still be here tomorrow.</p></div></div>
+<section><div class="wrap task-layout">
+  <form class="card form-grid" id="task-form">
+    <h3>Add a task</h3>
+    <div class="field"><label for="t-title">Task title</label><input id="t-title" type="text" placeholder="e.g. Finish portal assignment" maxlength="80" required></div>
+    <div class="field"><label for="t-course">Course</label><select id="t-course"></select></div>
+    <div class="field"><label for="t-due">Due date</label><input id="t-due" type="date" required></div>
+    <div class="field"><label for="t-priority">Priority</label><select id="t-priority"><option value="high">High</option><option value="medium" selected>Medium</option><option value="low">Low</option></select></div>
+    <button class="btn" type="submit">Add task</button>
+  </form>
+  <div>
+    <div class="sec-head" style="margin-bottom:1rem"><h2 style="font-size:1.5rem">Your tasks</h2><p id="task-summary"></p></div>
+    <div class="chips" id="task-filters"><button class="chip on" data-view="all">All</button><button class="chip" data-view="pending">Pending</button><button class="chip" data-view="done">Completed</button></div>
+    <ul class="task-list" id="task-list"></ul>
+  </div>
+</div></section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/tasks.js"></script>
+</body>
+</html>
